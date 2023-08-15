@@ -18,9 +18,7 @@
     "baseUrl": ".",
     "paths": {
       "@nx-shops/cart/cart-page": ["libs/cart/cart-page/src/index.ts"],
-      "@nx-shops/products/home-page": [
-        "libs/products/home-page/src/index.ts"
-      ],
+      "@nx-shops/products/home-page": ["libs/products/home-page/src/index.ts"],
       "@nx-shops/products/product-detail-page": [
         "libs/products/product-detail-page/src/index.ts"
       ],
@@ -30,7 +28,6 @@
       ],
       "@nx-shops/shared/e2e-utils": ["libs/shared/e2e-utils/src/index.ts"],
       "@nx-shops/shared/header": ["libs/shared/header/src/index.ts"],
-      "@nx-shops/shared/jsxify": ["libs/shared/jsxify/src/index.ts"],
       "@nx-shops/shared/product/data": [
         "libs/shared/product/data/src/index.ts"
       ],

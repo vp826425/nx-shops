@@ -1,4 +1,7 @@
-import { JSXify } from '@nx-shops/shared/jsxify';
+type Omit<T, K extends keyof T> = Pick<T, Exclude<keyof T, K>>;
+export type JSXify<T extends Element> = Partial<
+  Omit<T, 'children'> & { children?: any[] }
+>;
 
 enum ProductPriceElementAttribute {
   Value = 'value',

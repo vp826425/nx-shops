@@ -11,8 +11,9 @@
   "prefix": "nx-shops",
   "targets": {
     "build": {
-      "executor": "@angular-devkit/build-angular:browser",
+      "executor": "@nx/angular:webpack-browser",
       "options": {
+        "buildLibsFromSource": false,
         "aot": true,
         "outputPath": "dist/apps/products",
         "index": "apps/products/src/index.html",

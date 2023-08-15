@@ -34,7 +34,7 @@
           "node_modules/normalize.css/normalize.css"
         ],
         "scripts": [],
-        "buildLibsFromSource": true,
+        "buildLibsFromSource": false,
         "isolatedConfig": true
       },
       "configurations": {

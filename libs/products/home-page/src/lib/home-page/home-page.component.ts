@@ -7,9 +7,9 @@ import {
   getProducts,
   getProductsState,
   ProductsPartialState,
-} from '@nx-example/shared/product/state';
-import { Product } from '@nx-example/shared/product/types';
-import '@nx-example/shared/product/ui';
+} from '@nx-shops/shared/product/state';
+import { Product } from '@nx-shops/shared/product/types';
+import '@nx-shops/shared/product/ui';
 
 @Component({
   selector: 'products-home-page',

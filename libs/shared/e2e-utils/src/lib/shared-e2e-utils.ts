@@ -1,1 +1,1 @@
-export const getHeader = () => cy.get('nx-example-header');
+export const getHeader = () => cy.get('nx-shops-header');

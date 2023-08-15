@@ -2,12 +2,11 @@
   "affected": {
     "defaultBase": "master"
   },
-  "npmScope": "nx-example",
+  "npmScope": "nx-shops",
   "tasksRunnerOptions": {
     "default": {
-      "runner": "nx-cloud",
+      "runner": "nx/tasks-runners/default",
       "options": {
-        "accessToken": "YmM1MGMwMTUtNzAyYi00ZjM4LWExNGUtZDM2ZjYyNzNiODAxfHJlYWQ=",
         "cacheableOperations": ["build", "lint", "test", "e2e"],
         "parallel": 1
       }

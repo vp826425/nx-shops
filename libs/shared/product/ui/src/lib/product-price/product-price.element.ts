@@ -1,4 +1,4 @@
-import { JSXify } from '@nx-example/shared/jsxify';
+import { JSXify } from '@nx-shops/shared/jsxify';
 
 enum ProductPriceElementAttribute {
   Value = 'value',
@@ -8,7 +8,7 @@ declare global {
   // eslint-disable-next-line @typescript-eslint/no-namespace
   namespace JSX {
     interface IntrinsicElements {
-      'nx-example-product-price': JSXify<ProductPriceElement>;
+      'nx-shops-product-price': JSXify<ProductPriceElement>;
     }
   }
 }
@@ -36,4 +36,4 @@ export class ProductPriceElement extends HTMLElement {
     }
   }
 }
-customElements.define('nx-example-product-price', ProductPriceElement);
+customElements.define('nx-shops-product-price', ProductPriceElement);

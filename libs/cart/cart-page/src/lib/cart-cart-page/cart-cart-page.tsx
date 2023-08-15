@@ -2,7 +2,7 @@ import { useReducer } from 'react';
 
 import styled from '@emotion/styled';
 
-import '@nx-example/shared/product/ui';
+import '@nx-shops/shared/product/ui';
 
 import {
   CartItem,
@@ -10,12 +10,12 @@ import {
   getItemCost,
   getTotalCost,
   SetQuantity,
-} from '@nx-example/shared/cart/state/react';
+} from '@nx-shops/shared/cart/state/react';
 import {
   getProduct,
   initialState,
   productsReducer,
-} from '@nx-example/shared/product/state/react';
+} from '@nx-shops/shared/product/state/react';
 
 const StyledUl = styled.ul`
   display: flex;
@@ -103,7 +103,7 @@ export const CartCartPage = () => {
             <h2>{getProduct(productsState, item.productId).name}</h2>
           </a>
           <p>
-            <nx-example-product-price
+            <nx-shops-product-price
               value={getProduct(productsState, item.productId).price}
             />
           </p>
@@ -120,7 +120,7 @@ export const CartCartPage = () => {
             ))}
           </select>
           <p>
-            <nx-example-product-price
+            <nx-shops-product-price
               value={getItemCost(item, productsState)}
             />
           </p>
@@ -129,7 +129,7 @@ export const CartCartPage = () => {
       <StyledTotalLi>
         <h2>Total</h2>
         <p>
-          <nx-example-product-price
+          <nx-shops-product-price
             value={getTotalCost(cartState, productsState)}
           />
         </p>

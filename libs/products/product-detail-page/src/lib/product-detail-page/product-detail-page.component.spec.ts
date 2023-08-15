@@ -5,7 +5,7 @@ import { ActivatedRoute } from '@angular/router';
 import { StoreModule } from '@ngrx/store';
 import { of } from 'rxjs';
 
-import { SharedProductStateModule } from '@nx-example/shared/product/state';
+import { SharedProductStateModule } from '@nx-shops/shared/product/state';
 
 import { ProductDetailPageComponent } from './product-detail-page.component';
 
@@ -49,7 +49,7 @@ describe('ProductDetailPageComponent', () => {
 
   it(`should show the product's price`, () => {
     const price = fixture.nativeElement.querySelector(
-      'nx-example-product-price'
+      'nx-shops-product-price'
     );
     expect(price).toBeTruthy();
     expect(price.textContent).toEqual('$100.00');

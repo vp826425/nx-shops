@@ -8,11 +8,11 @@ import {
   getProduct,
   getProductsState,
   ProductsPartialState,
-} from '@nx-example/shared/product/state';
-import '@nx-example/shared/product/ui';
+} from '@nx-shops/shared/product/state';
+import '@nx-shops/shared/product/ui';
 
 @Component({
-  selector: 'nx-example-product-detail-page',
+  selector: 'nx-shops-product-detail-page',
   templateUrl: './product-detail-page.component.html',
   styleUrls: ['./product-detail-page.component.scss'],
 })

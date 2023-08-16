@@ -47,6 +47,12 @@
         }
       }
     },
+    "serve-static": {
+      "executor": "@nrwl/web:file-server",
+      "options": {
+        "buildTarget": "landing-page:build"
+      }
+    },
     "serve": {
       "executor": "@nx/webpack:dev-server",
       "defaultConfiguration": "development",

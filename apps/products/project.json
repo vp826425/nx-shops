@@ -71,6 +71,12 @@
       },
       "outputs": ["{options.outputPath}"]
     },
+    "serve-static": {
+      "executor": "@nrwl/web:file-server",
+      "options": {
+        "buildTarget": "products:build"
+      }
+    },
     "serve": {
       "executor": "@angular-devkit/build-angular:dev-server",
       "options": {

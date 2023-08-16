@@ -70,6 +70,12 @@
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production"
     },
+    "serve-static": {
+      "executor": "@nrwl/web:file-server",
+      "options": {
+        "buildTarget": "cart:build"
+      }
+    },
     "serve": {
       "executor": "@nx/webpack:dev-server",
       "options": {

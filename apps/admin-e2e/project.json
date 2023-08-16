@@ -8,15 +8,15 @@
       "executor": "@nx/cypress:cypress",
       "options": {
         "cypressConfig": "apps/admin-e2e/cypress.config.ts",
-        "devServerTarget": "admin:serve:development",
+        "devServerTarget": "admin:serve-static:development",
         "testingType": "e2e"
       },
       "configurations": {
         "production": {
-          "devServerTarget": "admin:serve:production"
+          "devServerTarget": "admin:serve-static:production"
         },
         "ci": {
-          "devServerTarget": "admin:serve-static"
+          "devServerTarget": "admin:serve-static-static"
         }
       }
     },

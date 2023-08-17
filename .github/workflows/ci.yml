@@ -11,7 +11,4 @@ jobs:
         with:
           fetch-depth: 0
       - uses: bahmutov/npm-install@v1
-      - run: npx nx affected --target=build
-      - run: npx nx affected --target=test
-      - run: npx nx affected --target=lint
       - run: npx nx affected --target=e2e

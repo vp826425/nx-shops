@@ -23,19 +23,19 @@ jobs:
       - run: docker build --build-arg="DIST=dist/apps"
       - run: publish-test-results-sonarcube.sh
 
-agents:
-  name: Agent ${{ matrix.agent }}
-  runs-on: ubuntu-latest
-  strategy:
-    matrix:
-      agent: [1, 2, 3]
-  steps:
-    - uses: actions/checkout@v3
-      with:
-        fetch-depth: 0
-    - uses: actions/setup-node@v3
-      with:
-        node-version: 16
-    - uses: bahmutov/npm-install@v1.8.34
-    - name: Start Nx Agent
-      run: npx nx-cloud start-agent
+  agents:
+    name: Agent ${{ matrix.agent }}
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        agent: [1, 2, 3]
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - uses: bahmutov/npm-install@v1.8.34
+      - name: Start Nx Agent
+        run: npx nx-cloud start-agent

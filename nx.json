@@ -1,4 +1,5 @@
 {
+  "bustCache": "1",
   "affected": {
     "defaultBase": "origin/master"
   },

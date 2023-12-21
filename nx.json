@@ -1,4 +1,5 @@
 {
+  "bustCache": "1",
   "affected": {
     "defaultBase": "origin/master"
   },
@@ -13,7 +14,8 @@
           "e2e"
         ],
         "parallel": 1,
-        "accessToken": "ZGVmNTU1ZjAtYzBhNi00Y2M0LThhYzItYmNiNmM4Mzg2ZWM1fHJlYWQtd3JpdGU="
+        "accessToken": "NGU1MjM1N2ItMGU2OS00Yjg1LTlkMGUtNjE0NTk1MzAwODg5fHJlYWQ=",
+        "url": "https://staging.nx.app"
       }
     }
   },

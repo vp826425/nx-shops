@@ -13,7 +13,8 @@
           "e2e"
         ],
         "parallel": 1,
-        "accessToken": "ZGVmNTU1ZjAtYzBhNi00Y2M0LThhYzItYmNiNmM4Mzg2ZWM1fHJlYWQtd3JpdGU="
+        "accessToken": "NDAyMmNlYmQtZDQ0MS00YTJiLTllNzMtMzU3NWY4MGVmMTQ2fHJlYWQtd3JpdGU=",
+        "url": "https://staging.nx.app"
       }
     }
   },

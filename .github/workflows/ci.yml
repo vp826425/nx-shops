@@ -24,9 +24,9 @@ jobs:
           npx nx affected --target=test &
           npx nx affected --target=build &
           npx nx affected --target=e2e
-      - run: ls -R /home/runner/work/nx-shops/nx-shops/dist/apps
+      - run: ls -lR /home/runner/work/nx-shops/nx-shops/dist/apps
         #docker build --build-arg="DIST=dist/apps" --no-cache .
-      - run: publish-test-results-sonarcube.sh
+      #- run: publish-test-results-sonarcube.sh
 
   agents:
     name: Agent ${{ matrix.agent }}

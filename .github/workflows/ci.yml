@@ -17,7 +17,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: npm install      
+      - run: npm cache clean -force      
       - uses: bahmutov/npm-install@v1.8.34
       - run: npx nx-cloud start-ci-run --stop-agents-after="e2e"
       - run: |

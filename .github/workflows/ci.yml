@@ -24,7 +24,7 @@ jobs:
           npx nx affected --target=test &
           npx nx affected --target=build &
           npx nx affected --target=e2e
-      - run: docker build --build-arg="DIST=dist/apps" --tag latest
+      - run: docker build --build-arg="DIST=dist/apps" --no-cache .
       - run: publish-test-results-sonarcube.sh
 
   agents:

@@ -1,6 +1,6 @@
 {
   "bustCache": "1",
-  "affected": { "defaultBase": "origin/master" },
+  "affected": { "defaultBase": "origin/dte-1" },
   "tasksRunnerOptions": {
     "default": {
       "runner": "nx-cloud",

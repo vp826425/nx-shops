@@ -1,28 +1,19 @@
 {
   "bustCache": "1",
-  "affected": {
-    "defaultBase": "origin/master"
-  },
+  "affected": { "defaultBase": "origin/master" },
   "tasksRunnerOptions": {
     "default": {
       "runner": "nx-cloud",
       "options": {
-        "cacheableOperations": [
-          "build",
-          "lint",
-          "test",
-          "e2e"
-        ],
+        "cacheableOperations": ["build", "lint", "test", "e2e"],
         "parallel": 1,
-        "accessToken": "NGU1MjM1N2ItMGU2OS00Yjg1LTlkMGUtNjE0NTk1MzAwODg5fHJlYWQ=",
+        "accessToken": "YzI5ZjNmNWEtZDg0MS00ODZmLWI4Y2MtZTY2OWE3OTVmNTQ4fHJlYWQtd3JpdGU=",
         "url": "https://staging.nx.app"
       }
     }
   },
   "cli": {
-    "warnings": {
-      "versionMismatch": false
-    },
+    "warnings": { "versionMismatch": false },
     "packageManager": "yarn",
     "analytics": false
   },
@@ -31,13 +22,9 @@
       "unitTestRunner": "jest",
       "e2eTestRunner": "cypress"
     },
-    "@nx/angular:library": {
-      "unitTestRunner": "jest"
-    },
+    "@nx/angular:library": { "unitTestRunner": "jest" },
     "@nx/angular": {
-      "convert-tslint-to-eslint": {
-        "removeTSLintIfNoMoreTSLintTargets": true
-      }
+      "convert-tslint-to-eslint": { "removeTSLintIfNoMoreTSLintTargets": true }
     },
     "@nx/react": {
       "application": {
@@ -46,58 +33,26 @@
         "bundler": "webpack",
         "babel": true
       },
-      "component": {
-        "style": "css"
-      },
-      "library": {
-        "style": "css",
-        "linter": "eslint"
-      }
+      "component": { "style": "css" },
+      "library": { "style": "css", "linter": "eslint" }
     }
   },
   "defaultProject": "products",
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "targetDefaults": {
     "build": {
-      "dependsOn": [
-        "^build"
-      ],
-      "inputs": [
-        "production",
-        "^production"
-      ]
+      "dependsOn": ["^build"],
+      "inputs": ["production", "^production"]
     },
-    "e2e": {
-      "dependsOn": [
-        "^build"
-      ],
-      "inputs": [
-        "default",
-        "^production"
-      ]
-    },
+    "e2e": { "dependsOn": ["^build"], "inputs": ["default", "^production"] },
     "test": {
-      "inputs": [
-        "default",
-        "^production",
-        "{workspaceRoot}/jest.preset.js"
-      ]
+      "inputs": ["default", "^production", "{workspaceRoot}/jest.preset.js"]
     },
-    "lint": {
-      "inputs": [
-        "default",
-        "{workspaceRoot}/.eslintrc.json"
-      ]
-    }
+    "lint": { "inputs": ["default", "{workspaceRoot}/.eslintrc.json"] }
   },
   "namedInputs": {
-    "default": [
-      "{projectRoot}/**/*",
-      "sharedGlobals"
-    ],
-    "sharedGlobals": [
-      "{workspaceRoot}/babel.config.json"
-    ],
+    "default": ["{projectRoot}/**/*", "sharedGlobals"],
+    "sharedGlobals": ["{workspaceRoot}/babel.config.json"],
     "production": [
       "default",
       "!{projectRoot}/**/?(*.)+(spec|test).[jt]s?(x)?(.snap)",

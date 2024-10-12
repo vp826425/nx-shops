@@ -7,7 +7,7 @@
       "options": {
         "cacheableOperations": ["build", "lint", "test", "e2e"],
         "parallel": 1,
-        "accessToken": "ZDk3MzVmNGYtMWZlNi00MzY4LWExOTUtOWE2NTJmMGM5Njg1",
+        "accessToken": "N2MzMjU1MzgtNGM0YS00Zjc3LWJjOTEtOThmYjY4MTExOTU3",
         "url": "https://staging.nx.app"
       }
     }
